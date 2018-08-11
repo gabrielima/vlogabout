@@ -1,26 +1,48 @@
-<div class="navbar-wrapper">
-  <nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
     <a class="navbar-brand" href="#">
+      logo
       <img src="logo.png" alt="">
     </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">
+          <a class="nav-link" [routerLink]="'feed'">
+            a
             <img src="icons/home.png" alt="">
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" [routerLink]="'busca'">
+            b
+            <img src="icons/calendario.png" alt="">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'calendario'">
+            c
+            <img src="icons/calendario.png" alt="">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            d
+            <img src="icons/calendario.png" alt="">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'configuracoes'">
+            e
             <img src="icons/calendario.png" alt="">
           </a>
         </li>
       </ul>
     </div>
-  </nav>
-</div>
+  </div>
+</nav>
