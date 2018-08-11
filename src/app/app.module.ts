@@ -15,6 +15,11 @@ import { PerfilComponent } from './pages/dashboard/perfil/perfil.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PerfilHeaderComponent } from './components/perfil-header/perfil-header.component';
+import { EditarPerfilComponent } from './pages/dashboard/configuracoes/editar-perfil/editar-perfil.component';
+import { AlterarSenhaComponent } from './pages/dashboard/configuracoes/alterar-senha/alterar-senha.component';
+import { NotificacoesComponent } from './pages/dashboard/configuracoes/notificacoes/notificacoes.component';
+import { PrivacidadeSegurancaComponent } from './pages/dashboard/configuracoes/privacidade-seguranca/privacidade-seguranca.component';
+import { MenuSettingsComponent } from './pages/dashboard/configuracoes/menu-settings/menu-settings.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { PerfilHeaderComponent } from './components/perfil-header/perfil-header.
     PerfilComponent,
     DashboardComponent,
     FooterComponent,
-    PerfilHeaderComponent
+    PerfilHeaderComponent,
+    EditarPerfilComponent,
+    AlterarSenhaComponent,
+    NotificacoesComponent,
+    PrivacidadeSegurancaComponent,
+    MenuSettingsComponent
   ],
   imports: [
     AppRouting,

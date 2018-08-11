@@ -8,6 +8,10 @@ import { ConfiguracoesComponent } from './pages/dashboard/configuracoes/configur
 import { LoginComponent } from './pages/login/login.component';
 import { PerfilComponent } from './pages/dashboard/perfil/perfil.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { EditarPerfilComponent } from './pages/dashboard/configuracoes/editar-perfil/editar-perfil.component';
+import { AlterarSenhaComponent } from './pages/dashboard/configuracoes/alterar-senha/alterar-senha.component';
+import { NotificacoesComponent } from './pages/dashboard/configuracoes/notificacoes/notificacoes.component';
+import { PrivacidadeSegurancaComponent } from './pages/dashboard/configuracoes/privacidade-seguranca/privacidade-seguranca.component';
 
 export const AppRoutes: Routes = [
   {
@@ -39,7 +43,30 @@ export const AppRoutes: Routes = [
       },
       {
         path: 'configuracoes',
-        component:  ConfiguracoesComponent
+        component:  ConfiguracoesComponent,
+        children: [
+          {
+            path: '',
+            redirectTo: 'editar-perfil',
+            pathMatch: 'full',
+          },
+          {
+            path: 'editar-perfil',
+            component: EditarPerfilComponent
+          },
+          {
+            path: 'alterar-senha',
+            component: AlterarSenhaComponent
+          },
+          {
+            path: 'notificacoes',
+            component: NotificacoesComponent
+          },
+          {
+            path: 'privacidade-seguranca',
+            component: PrivacidadeSegurancaComponent
+          },
+        ]
       },
       {
         path: 'feed',
