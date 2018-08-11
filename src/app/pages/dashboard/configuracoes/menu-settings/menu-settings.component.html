@@ -1,25 +1,27 @@
 <ul class="menu-settings">
   <li class="menu-settings__item">
-    <a [routerLink]="'editar-perfil'">
+    <a [routerLinkActive]="'active'" [routerLink]="'editar-perfil'">
       Editar Pefil
     </a>
   </li>
   <li class="menu-settings__item">
-    <a [routerLink]="'alterar-senha'">
+    <a [routerLinkActive]="'active'" [routerLink]="'alterar-senha'">
       Alterar Senha
     </a>
   </li>
   <li class="menu-settings__item">
-    <a [routerLink]="'notificacoes'">
+    <a [routerLinkActive]="'active'" [routerLink]="'notificacoes'">
       Notificações
     </a>
   </li>
   <li class="menu-settings__item">
-    <a [routerLink]="'privacidade-seguranca'">
+    <a [routerLinkActive]="'active'" [routerLink]="'privacidade-seguranca'">
       Privacidade e segurança
     </a>
   </li>
   <li class="menu-settings__item">
-    Sair
+    <a >
+      Sair
+    </a>
   </li>
 </ul>
