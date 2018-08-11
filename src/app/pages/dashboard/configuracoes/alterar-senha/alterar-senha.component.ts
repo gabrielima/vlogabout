@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alterar-senha.component.scss']
 })
 export class AlterarSenhaComponent implements OnInit {
+  profile = {
+    picture: 'https://picsum.photos/100/150',
+    name: 'CarlosOliver'
+  };
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
 }
