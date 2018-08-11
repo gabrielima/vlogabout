@@ -1,3 +1,61 @@
-<p>
-  editar-perfil works!
-</p>
+<div class="profile row">
+  <div class="col-sm-4 d-flex justify-content-end">
+    <img [src]="profile.picture" class="rounded" alt="">
+  </div>
+
+  <div class="col-sm-8 justify-content-center d-flex flex-column">
+    <p class="mb-0">{{ profile.name }}</p>
+    <a href="">Editar foto do perfil</a>
+  </div>
+</div>
+
+<form action="" class="mt-5">
+  <div class="form-group row">
+    <label for="nome" class="col-sm-4 col-form-label text-right">Nome</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="nome" placeholder="Nome">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="nomeUsuario" class="col-sm-4 col-form-label text-right">Nome do usuário</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="nomeUsuario" placeholder="Nome do usuário">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="site" class="col-sm-4 col-form-label text-right">Site</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="site" placeholder="Site">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="biografia" class="col-sm-4 col-form-label text-right">Biografia</label>
+    <div class="col-sm-8">
+      <textarea class="form-control" id="biografia" rows="3" placeholder="Biografia"></textarea>
+    </div>
+  </div>
+
+  <legend class="offset-sm-4 col-sm-8 mt-5 text-muted">Informações Privadas</legend>
+
+
+  <div class="form-group row">
+    <label for="email" class="col-sm-4 col-form-label text-right">Email</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="email" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="telefone" class="col-sm-4 col-form-label text-right">Telefone</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+    </div>
+  </div>
+
+
+  <div class="form-group row">
+    <div class="offset-sm-4 col-sm-8 submit-button">
+      <input type="submit" value="Enviar" class="btn btn-primary mr-2">
+      <button class="btn btn-primary" type="button">Cancelar</button>
+    </div>
+  </div>
+</form>

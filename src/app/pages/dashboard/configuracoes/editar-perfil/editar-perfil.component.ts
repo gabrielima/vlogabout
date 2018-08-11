@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./editar-perfil.component.scss']
 })
 export class EditarPerfilComponent implements OnInit {
+  profile = {
+    picture: 'https://picsum.photos/100/150',
+    name: 'CarlosOliver'
+  };
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
