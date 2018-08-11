@@ -1,0 +1,49 @@
+$primary-color: orange;
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.notificacao__check {
+  position: relative;
+}
+
+.check {
+  position: absolute;
+  opacity: 0;
+}
+
+.check + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+.check + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid $primary-color;
+  border-radius: 3px;
+}
+
+.check:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  -webkit-box-shadow: 2px 0 0 $primary-color, 4px 0 0 $primary-color, 4px -2px 0 $primary-color,
+    4px -4px 0 $primary-color, 4px -6px 0 $primary-color, 4px -8px 0 $primary-color;
+  box-shadow: 2px 0 0 $primary-color, 4px 0 0 $primary-color, 4px -2px 0 $primary-color, 4px -4px 0 $primary-color,
+    4px -6px 0 $primary-color, 4px -8px 0 $primary-color;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
