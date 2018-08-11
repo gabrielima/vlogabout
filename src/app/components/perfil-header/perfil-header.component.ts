@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./perfil-header.component.scss']
 })
 export class PerfilHeaderComponent implements OnInit {
+  profile = {
+    name: 'Carlos Oliver',
+    instagram: 'carlos.oliver',
+    picture: 'https://picsum.photos/100/150'
+  };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

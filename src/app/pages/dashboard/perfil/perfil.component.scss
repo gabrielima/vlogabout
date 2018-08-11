@@ -1,0 +1,10 @@
+@import './../../../../assets/scss/_variables';
+
+.message {
+  width: 250px;
+
+  h4 {
+    color: $primary-color;
+    font-size: 1.7rem;
+  }
+}

@@ -1,5 +1,18 @@
-<div class="profile">
-  <div class="container">
-    <p class="my-4">teste</p>
+<div class="container">
+  <div class="profile row">
+    <div class="col d-flex align-items-end">
+      <img [src]="profile.picture" class="rounded" alt="">
+
+      <div class="profile-info d-flex flex-column justify-content-end flex-grow-1">
+        <p class="mb-0 name">{{ profile.name }}</p>
+        <p class="mb-0 instagram">@{{ profile.instagram }}</p>
+      </div>
+    </div>
+
+    <div class="col-auto d-flex flex-column">
+      <button class="btn btn-sm btn-outline-light">Followers</button>
+      <button class="btn btn-sm btn-outline-light my-1">Following</button>
+      <button class="btn btn-sm btn-outline-primary">EDIT PROFILE</button>
+    </div>
   </div>
 </div>
