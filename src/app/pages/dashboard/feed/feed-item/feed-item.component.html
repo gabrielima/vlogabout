@@ -1,0 +1,58 @@
+<div class="row item">
+  <div class="col-md-8 item-video">
+    <img src="https://picsum.photos/100/150" alt="">
+  </div>
+
+  <div class="col-md-4 d-flex flex-column item-info">
+    <div class="d-flex flex-md-column">
+      <img [src]="profile.picture" class="profile-img rounded" alt="">
+
+      <div class="profile-info d-flex flex-column justify-content-end flex-grow-1">
+        <p class="mb-0 name">{{ profile.name }}</p>
+        <p class="mb-0 instagram">@{{ profile.instagram }}</p>
+      </div>
+
+      <div class="item-date text-sm">12.03.18</div>
+    </div>
+
+    <div class="item-comments flex-grow-1">
+      <div class="comments">
+        <p *ngFor="let comment of comments">
+          <b>{{ comment.name }}</b> {{ comment.text }}
+        </p>
+
+        <a>Carregar mais comentarios</a>
+      </div>
+    </div>
+
+    <div class="item-share d-flex">
+      <div class="flex-grow-1">
+        <button>
+          c
+          <img src="" alt="">
+        </button>
+        <button>
+          c
+          <img src="" alt="">
+        </button>
+        <button>
+          c
+          <img src="" alt="">
+        </button>
+      </div>
+      <div>
+        <button>
+          8
+          <img src="" alt="">
+        </button>
+      </div>
+    </div>
+
+    <div class="item-add-comment row">
+      <input type="text" placeholder="Adicione um comentário" class="col">
+      <div class="col-auto">
+        <img src="https://picsum.photos/50/30" alt="">
+      </div>
+    </div>
+  </div>
+</div>

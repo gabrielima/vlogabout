@@ -22,6 +22,7 @@ import { AlterarSenhaComponent } from './pages/dashboard/configuracoes/alterar-s
 import { NotificacoesComponent } from './pages/dashboard/configuracoes/notificacoes/notificacoes.component';
 import { PrivacidadeSegurancaComponent } from './pages/dashboard/configuracoes/privacidade-seguranca/privacidade-seguranca.component';
 import { MenuSettingsComponent } from './pages/dashboard/configuracoes/menu-settings/menu-settings.component';
+import { FeedItemComponent } from './pages/dashboard/feed/feed-item/feed-item.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { MenuSettingsComponent } from './pages/dashboard/configuracoes/menu-sett
     AlterarSenhaComponent,
     NotificacoesComponent,
     PrivacidadeSegurancaComponent,
-    MenuSettingsComponent
+    MenuSettingsComponent,
+    FeedItemComponent
   ],
   imports: [
     AppRouting,
