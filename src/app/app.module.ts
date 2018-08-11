@@ -14,6 +14,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { PerfilComponent } from './pages/dashboard/perfil/perfil.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PerfilHeaderComponent } from './components/perfil-header/perfil-header.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './components/footer/footer.component';
     LoginComponent,
     PerfilComponent,
     DashboardComponent,
-    FooterComponent
+    FooterComponent,
+    PerfilHeaderComponent
   ],
   imports: [
     AppRouting,
