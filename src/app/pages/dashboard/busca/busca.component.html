@@ -9,33 +9,16 @@
 
       <div class="results row">
         <div class="col-sm-4">
-          <div class="result">
-            <img src="assets/imgs/busca/video_background.png" alt="">
-          </div>
-          <div class="result">
-            <img src="assets/imgs/busca/video_background.png" alt="">
-          </div>
-          <div class="result">
-            <img src="assets/imgs/busca/video_background.png" alt="">
-          </div>
-          <div class="result">
-            <img src="assets/imgs/busca/video_background.png" alt="">
-          </div>
-          <div class="result">
-            <img src="assets/imgs/busca/video_background.png" alt="">
+          <div class="result" *ngFor="let video of [1,2,3,4,5]">
+            <app-video></app-video>
           </div>
         </div>
 
         <div class="col-sm-8">
-          <div class="result result-lg">
-            <img src="assets/imgs/busca/video_background.png" alt="">
-          </div>
-          <div class="result result-lg">
-            <img src="assets/imgs/busca/video_background.png" alt="">
-          </div>
+          <div class="result result-lg" *ngFor="let video of [1,2]">
+            <app-video class="lg"></app-video>
         </div>
       </div>
-
     </div>
   </div>
 </div>

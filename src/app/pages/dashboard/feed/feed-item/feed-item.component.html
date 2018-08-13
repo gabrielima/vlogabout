@@ -1,13 +1,13 @@
 <div class="row item">
   <div class="col-md-8 item-video">
-    <img src="https://picsum.photos/100/150" alt="">
+    <app-video class="lg"></app-video>
   </div>
 
-  <div class="col-md-4 d-flex flex-column item-info">
+  <div class="col-md-4 d-flex flex-column item-info mt-3 mt-md-0">
     <div class="d-flex flex-md-column">
       <img [src]="profile.picture" class="profile-img rounded" alt="">
 
-      <div class="profile-info d-flex flex-column justify-content-end flex-grow-1">
+      <div class="profile-info d-flex flex-column justify-content-end flex-grow-1 ml-2 ml-md-0 mt-md-2">
         <p class="mb-0 name">{{ profile.name }}</p>
         <p class="mb-0 instagram">@{{ profile.instagram }}</p>
       </div>
@@ -21,29 +21,26 @@
           <b>{{ comment.name }}</b> {{ comment.text }}
         </p>
 
-        <a>Carregar mais comentarios</a>
+        <a class="text-muted text-sm">Carregar mais comentarios</a>
       </div>
     </div>
 
     <div class="item-share d-flex">
       <div class="flex-grow-1">
         <button>
-          c
-          <img src="" alt="">
+          <img src="assets/imgs/feed/like.png" alt="">
         </button>
         <button>
-          c
-          <img src="" alt="">
+          <img src="assets/imgs/feed/comentar.png" alt="">
         </button>
         <button>
-          c
-          <img src="" alt="">
+          <img src="assets/imgs/feed/compartilhar.png" alt="">
         </button>
       </div>
-      <div>
+      <div class="item-share__views">
         <button>
           8
-          <img src="" alt="">
+          <img src="assets/imgs/feed/views.png" alt="">
         </button>
       </div>
     </div>
@@ -51,7 +48,7 @@
     <div class="item-add-comment row">
       <input type="text" placeholder="Adicione um comentário" class="col">
       <div class="col-auto">
-        <img src="https://picsum.photos/50/30" alt="">
+        <img src="assets/imgs/feed/mais.png" alt="">
       </div>
     </div>
   </div>

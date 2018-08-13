@@ -23,6 +23,7 @@ import { NotificacoesComponent } from './pages/dashboard/configuracoes/notificac
 import { PrivacidadeSegurancaComponent } from './pages/dashboard/configuracoes/privacidade-seguranca/privacidade-seguranca.component';
 import { MenuSettingsComponent } from './pages/dashboard/configuracoes/menu-settings/menu-settings.component';
 import { FeedItemComponent } from './pages/dashboard/feed/feed-item/feed-item.component';
+import { VideoComponent } from './components/video/video.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { FeedItemComponent } from './pages/dashboard/feed/feed-item/feed-item.co
     NotificacoesComponent,
     PrivacidadeSegurancaComponent,
     MenuSettingsComponent,
-    FeedItemComponent
+    FeedItemComponent,
+    VideoComponent
   ],
   imports: [
     AppRouting,

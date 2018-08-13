@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlterarSenhaComponent implements OnInit {
   profile = {
-    picture: 'https://picsum.photos/100/150',
+    picture: 'assets/imgs/carlos-oliver.png',
     name: 'CarlosOliver'
   };
 

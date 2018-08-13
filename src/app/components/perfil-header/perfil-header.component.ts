@@ -9,7 +9,7 @@ export class PerfilHeaderComponent implements OnInit {
   profile = {
     name: 'Carlos Oliver',
     instagram: 'carlos.oliver',
-    picture: 'https://picsum.photos/100/150'
+    picture: 'assets/imgs/carlos-oliver.png'
   };
 
   constructor() {}
