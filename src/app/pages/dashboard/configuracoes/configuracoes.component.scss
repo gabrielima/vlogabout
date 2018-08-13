@@ -1,0 +1,12 @@
+@import './../../../../assets/scss/variables';
+
+.configuracoes {
+  hr {
+    border-color: rgba(0,0,0,0.8);
+  }
+
+  input, textarea, select {
+    border: 2px solid $primary!important;
+    border-radius: 6px!important;
+  }
+}
