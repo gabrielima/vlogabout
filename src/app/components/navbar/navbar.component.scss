@@ -7,3 +7,12 @@
 .nav-item {
   margin-right: 15px;
 }
+
+.nav-link {
+  .nav-link-img-active { display: none; }
+
+  &.active {
+    .nav-link-img { display: none; }
+    .nav-link-img-active { display: inline-block; }
+  }
+}
