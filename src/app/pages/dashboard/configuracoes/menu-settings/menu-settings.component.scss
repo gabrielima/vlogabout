@@ -3,7 +3,6 @@
 .menu-settings {
   list-style: none;
   padding: 0;
-  border-right: 1px solid;
   margin-right: 15px;
   height: 100%;
 
@@ -21,5 +20,9 @@
       border-color: $primary;
       font-weight: bold;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    border-right: 1px solid;
   }
 }
