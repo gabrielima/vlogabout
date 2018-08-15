@@ -1,0 +1,46 @@
+@import './../../../../assets/scss/variables';
+
+:host {
+  padding: 25px 30px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.tabs {
+  margin-top: 20px;
+  border-bottom: 1px solid $primary;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 6px solid transparent;
+
+  &.active {
+    border-color: $primary;
+  }
+}
+
+.users-wrapper {
+  overflow: hidden;
+  max-height: 500px;
+}
+
+.users {
+  max-height: 500px;
+  overflow-y: scroll;
+  margin: 0 -15px;
+  padding: 0;
+}
+
+.user {
+  padding: 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+
+  &:last-child {
+    border: 0;
+  }
+}

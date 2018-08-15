@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { FollowModalComponent } from './follow-modal/follow-modal.component';
 
 @Component({
   selector: 'app-perfil-header',
@@ -12,7 +14,38 @@ export class PerfilHeaderComponent implements OnInit {
     picture: 'assets/imgs/carlos-oliver.png'
   };
 
-  constructor() {}
+  followers = [
+    { instagram: '@BrunoRodriguez' },
+    { instagram: '@CarlosPereira' },
+    { instagram: '@CarolRennier' },
+    { instagram: '@DanielFontona' },
+    { instagram: '@DouglasSilva' },
+    { instagram: '@DouglasSilva' },
+    { instagram: '@CarlolRennier' },
+    { instagram: '@DanielFontona' }
+  ];
+
+  following = [
+    { instagram: '@DouglasSilva' },
+    { instagram: '@DouglasSilva' },
+    { instagram: '@CarlolRennier' },
+    { instagram: '@DanielFontona' },
+    { instagram: '@BrunoRodriguez' },
+    { instagram: '@CarlosPereira' },
+    { instagram: '@CarolRennier' },
+    { instagram: '@DanielFontona' },
+  ];
+
+  constructor(private modalService: NgbModal) {}
 
   ngOnInit() {}
+
+  open(tab) {
+    const modalRef = this.modalService.open(FollowModalComponent, {
+      centered: true
+    });
+    modalRef.componentInstance.tab = tab;
+    modalRef.componentInstance.followers = this.followers;
+    modalRef.componentInstance.following = this.following;
+  }
 }

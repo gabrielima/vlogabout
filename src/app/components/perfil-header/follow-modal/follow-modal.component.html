@@ -1,0 +1,33 @@
+<div class="follow-modal">
+  <div class="follow-modal__close d-flex justify-content-end">
+    <button (click)="modal.close()">
+      <img src="assets/imgs/follow-modal/X.png" alt="">
+    </button>
+  </div>
+
+  <div class="tabs d-flex">
+    <div class="tab flex-grow-1 text-center" [class.active]="tab === 'Followers'"
+      (click)="switchTab('Followers')">
+      FOLLOWERS
+    </div>
+    <div class="tab flex-grow-1 text-center" [class.active]="tab === 'Following'"
+      (click)="switchTab('Following')">
+      FOLLOWING
+    </div>
+  </div>
+
+  <div class="tabs-content">
+    <div class="users-wrapper">
+      <ul class="users">
+        <li class="user d-flex justify-content-between align-items-center"
+          *ngFor="let user of (tab === 'Followers' ? followers : following); let i = index">
+          <img [src]="'assets/imgs/follow-modal/FOTO_' + (i+1) + '.png'" alt="">
+          <a class="flex-grow-1 font-weight-bold px-4" href="">{{ user.instagram }}</a>
+          <button>
+            <img src="assets/imgs/follow-modal/FAVORITE.png" alt="">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
