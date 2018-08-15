@@ -1,0 +1,71 @@
+.wrapper {
+  padding-top: 60px;
+  min-height: 100vh;
+  background-image: url(/assets/imgs/login/Fundo-preto.png);
+  color: #fff;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 40px;
+
+  img {
+    width: 200px;
+  }
+}
+
+.login-input {
+  position: relative;
+  margin-bottom: 50px;
+
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 12px 5px;
+    display: block;
+  }
+
+  input {
+    border: 0;
+    border-bottom: 1px solid #fff;
+    padding: 12px 10px;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    color: #fff;
+  }
+}
+
+.login-button {
+  border: 1px solid #fff;
+  border-radius: 7px;
+  display: block;
+  width: 100%;
+  color: inherit;
+  padding: 5px 5px;
+  background-color: transparent;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+hr {
+  border-color: #fff;
+  margin-bottom: 40px;
+}
+
+.stores {
+  a {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+  }
+}

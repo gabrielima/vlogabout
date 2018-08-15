@@ -1,3 +1,43 @@
-<p>
-  <a [routerLink]="'/dashboard'">dashboard</a>
-</p>
+<div class="wrapper d-flex flex-column">
+
+  <div class="container flex-grow-1">
+    <div class="row">
+      <div class="col-sm-7 col-md-5">
+        <div class="logo">
+          <img src="assets/imgs/login/Logo.png" alt="">
+        </div>
+
+        <p class="mb-5">LOG IN</p>
+
+        <form action="">
+          <div class="login-input">
+            <input type="email" id="login-email" class="login-email" name="email" [(ngModel)]="email">
+            <label for="login-email" *ngIf="email.length === 0">E-MAIL</label>
+          </div>
+
+          <div class="login-input">
+            <input type="password" id="login-password" class="login-password" name="password" [(ngModel)]="password">
+            <label for="login-password" *ngIf="password.length === 0">PASSWORD</label>
+          </div>
+
+          <button class="login-button" [routerLink]="'/dashboard'">ENTER</button>
+
+          <a href="">Forgot password ?</a>
+
+          <hr>
+
+          <div class="row stores">
+            <div class="col-6">
+              <a href=""><img src="assets/imgs/login/app-apple.png" alt=""></a>
+            </div>
+            <div class="col-6">
+              <a href=""><img src="assets/imgs/login/app-google.png" alt=""></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <app-footer class="login-page"></app-footer>
+</div>

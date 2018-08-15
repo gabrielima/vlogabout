@@ -25,6 +25,8 @@ import { MenuSettingsComponent } from './pages/dashboard/configuracoes/menu-sett
 import { FeedItemComponent } from './pages/dashboard/feed/feed-item/feed-item.component';
 import { PlayerComponent } from './components/player/player.component';
 import { NavNotificacoesComponent } from './components/navbar/nav-notificacoes/nav-notificacoes.component';
+import { FeedModalComponent } from './pages/dashboard/feed/feed-modal/feed-modal.component';
+import { FollowModalComponent } from './components/perfil-header/follow-modal/follow-modal.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { NavNotificacoesComponent } from './components/navbar/nav-notificacoes/n
     MenuSettingsComponent,
     FeedItemComponent,
     PlayerComponent,
-    NavNotificacoesComponent
+    NavNotificacoesComponent,
+    FeedModalComponent,
+    FollowModalComponent
   ],
   imports: [
     AppRouting,
@@ -54,6 +58,9 @@ import { NavNotificacoesComponent } from './components/navbar/nav-notificacoes/n
     FormsModule,
     BrowserModule,
     NgbModule.forRoot()
+  ],
+  entryComponents: [
+    FollowModalComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

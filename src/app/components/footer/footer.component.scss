@@ -2,3 +2,9 @@
   background-color: #222;
   color: #fff;
 }
+
+:host.login-page #footer {
+  background-color: transparent;
+  text-align: center;
+  padding: 20px 0 40px;
+}
