@@ -14,6 +14,7 @@ export class NavNotificacoesComponent {
   openModalSolicitacoes() {
     this.modalService.open(AceitarSeguidoresModalComponent, {
       centered: true,
+      size: 'lg'
     });
   }
 }

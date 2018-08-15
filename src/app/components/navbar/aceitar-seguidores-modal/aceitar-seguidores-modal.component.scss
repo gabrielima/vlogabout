@@ -1,18 +1,52 @@
+@import './../../../../assets/scss/variables';
+
+.aceitar-seguidores {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .aceitar-seguidores__header {
   position: relative;
   color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .close-modal {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 10px;
   background: none;
   border: 0;
 }
 
 button {
+  cursor: pointer;
   border-radius: 10px;
-  padding: 2px 17px;
+  padding: 2px 30px;
   line-height: 1.6;
+}
+
+.solicitacoes-wrapper {
+  overflow: hidden;
+  max-height: 500px;
+}
+
+.solicitacoes {
+  padding: 0 20px;
+  margin: 0 -20px;
+  overflow: scroll;
+  max-height: 500px;
+}
+
+.solicitacao {
+  padding: 20px;
+  border-right: 6px solid transparent;
+  border-bottom: 1px solid rgba(#000, 0.3);
+
+  &:hover {
+    border-right-color: $primary;
+  }
 }
