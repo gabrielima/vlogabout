@@ -34,12 +34,13 @@ button {
 .notificacoes-wrapper {
   overflow: hidden;
   max-height: 400px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
 .notificacoes {
-  width: calc(100% + 20px);
   max-height: 400px;
+  margin: 0 -40px;
+  padding: 0 40px;
   overflow-x: scroll;
 }
 
@@ -51,7 +52,7 @@ button {
   border-right: 7px solid transparent;
   border-bottom: 1px solid rgba(0,0,0,0.3);
   margin: 0;
-  padding: 10px 0;
+  padding: 10px 15px;
 
   a {
     font-weight: bold;
