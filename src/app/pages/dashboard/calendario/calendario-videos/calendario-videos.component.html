@@ -1,0 +1,29 @@
+<div class="mes">
+  <div>MARCH 2018</div>
+  <img src="assets/imgs/calendario/arrow.png" alt="">
+</div>
+
+<table class="calendario text-center w-100">
+  <thead class="dias-semana">
+    <tr>
+      <th class="dia-semana">SUN</th>
+      <th class="dia-semana">MON</th>
+      <th class="dia-semana">TUE</th>
+      <th class="dia-semana">WED</th>
+      <th class="dia-semana">THU</th>
+      <th class="dia-semana">FRI</th>
+      <th class="dia-semana">SAT</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr class="semanas" *ngFor="let week of weeks">
+      <td class="dia" *ngFor="let day of week" [class.has-video]="day.video">
+        <span>{{ day.day }}</span>
+        <div class="video" (click)="open(day.video)">
+          <img [src]="day.video" alt="" *ngIf="day.video">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
