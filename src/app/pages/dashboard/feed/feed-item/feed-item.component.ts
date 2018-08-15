@@ -50,5 +50,5 @@ export class FeedItemComponent {
     }
   ];
 
-  // constructor(public modal: NgbActiveModal) { }
+  constructor(public modal: NgbActiveModal) { }
 }
