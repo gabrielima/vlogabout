@@ -1,13 +1,14 @@
-<div class="wrapper d-flex flex-column">
+<div class="wrapper d-flex flex-column" [ngClass]="telaLogin">
+  <div class="background-black"></div>
 
-  <div class="container flex-grow-1">
+  <div class="container flex-grow-1 content">
     <div class="row">
       <div class="col-sm-7 col-md-5">
         <div class="logo">
           <img src="assets/imgs/login/Logo.png" alt="">
         </div>
 
-        <p class="mb-5">LOG IN</p>
+        <p class="mb-5 mt-5">LOG IN</p>
 
         <form action="">
           <div class="login-input">
@@ -35,6 +36,12 @@
             </div>
           </div>
         </form>
+      </div>
+
+      <div class="col-sm-5 col-md-7 celular">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <img src="assets/imgs/login/celular.png" alt="">
+        </div>
       </div>
     </div>
   </div>

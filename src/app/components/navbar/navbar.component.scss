@@ -43,6 +43,19 @@
   }
 }
 
+.notificacoes-qtd {
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  background-color: $primary;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  right: 7px;
+  text-align: center;
+  line-height: 16px;
+}
+
 .showPopover {
   z-index: $zIndex-popover;
 }

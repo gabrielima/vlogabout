@@ -1,8 +1,39 @@
 .wrapper {
   padding-top: 60px;
   min-height: 100vh;
-  background-image: url(/assets/imgs/login/Fundo-preto.png);
   color: #fff;
+
+  &.preto {
+    background-image: url(/assets/imgs/login/Fundo-preto.png);
+  }
+  &.vermelho {
+    background-image: url(/assets/imgs/login/Fundo-vermelho.png);
+  }
+  &.laranja {
+    background-image: url(/assets/imgs/login/Fundo-laranja.png);
+  }
+
+  &.vermelho,
+  &.laranja {
+    .celular { display: none; }
+    .background-black { display: block; }
+  }
+}
+
+.background-black {
+  position: absolute;
+  top: 39px;
+  right: 0;
+  left: 0;
+  height: 185px;
+  background-color: #000;
+  z-index: 5;
+  display: none;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
 }
 
 .logo {
