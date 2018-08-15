@@ -30,6 +30,7 @@ import { FollowModalComponent } from './components/perfil-header/follow-modal/fo
 import { CalendarioVideosComponent } from './pages/dashboard/calendario/calendario-videos/calendario-videos.component';
 import { CalendarioModalComponent } from './pages/dashboard/calendario/calendario-modal/calendario-modal.component';
 import { AceitarSeguidoresModalComponent } from './components/navbar/aceitar-seguidores-modal/aceitar-seguidores-modal.component';
+import { NavBuscaComponent } from './components/navbar/nav-busca/nav-busca.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { AceitarSeguidoresModalComponent } from './components/navbar/aceitar-seg
     FollowModalComponent,
     CalendarioVideosComponent,
     CalendarioModalComponent,
-    AceitarSeguidoresModalComponent
+    AceitarSeguidoresModalComponent,
+    NavBuscaComponent
   ],
   imports: [
     AppRouting,

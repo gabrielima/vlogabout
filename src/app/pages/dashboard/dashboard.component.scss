@@ -45,20 +45,3 @@
     background-color: #fff;
   }
 }
-
-.background-overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0,0,0,0.9);
-
-  &.modal {
-    z-index: $zIndex-modal - 1;
-  }
-
-  &.popover {
-    z-index: $zIndex-popover - 1;
-  }
-}

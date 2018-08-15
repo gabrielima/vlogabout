@@ -1,0 +1,23 @@
+<div class="nav-busca">
+  <input type="text" placeholder="SEARCH...">
+
+  <div class="results-wrapper">
+    <div class="results">
+      <div class="result d-flex" *ngFor="let result of results">
+        <div >
+          <img src="assets/imgs/header/busca/favorite-active.png" alt="" *ngIf="result.followingYou">
+          <img src="assets/imgs/header/busca/favorite.png" alt="" *ngIf="!result.followingYou">
+        </div>
+
+        <div class="mx-3">
+          <img [src]="'assets/imgs/header/busca/foto' + result.img + '.png'">
+        </div>
+
+        <div class="flex-grow-1 d-flex flex-column justify-content-center">
+          <p class="text-primary font-weight-bold mb-0">@{{ result.instagram }}</p>
+          <p class="mb-0" *ngIf="result.followingYou">Following You</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
