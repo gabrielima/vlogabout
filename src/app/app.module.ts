@@ -25,7 +25,6 @@ import { MenuSettingsComponent } from './pages/dashboard/configuracoes/menu-sett
 import { FeedItemComponent } from './pages/dashboard/feed/feed-item/feed-item.component';
 import { PlayerComponent } from './components/player/player.component';
 import { NavNotificacoesComponent } from './components/navbar/nav-notificacoes/nav-notificacoes.component';
-import { FeedModalComponent } from './pages/dashboard/feed/feed-modal/feed-modal.component';
 import { FollowModalComponent } from './components/perfil-header/follow-modal/follow-modal.component';
 import { CalendarioVideosComponent } from './pages/dashboard/calendario/calendario-videos/calendario-videos.component';
 import { CalendarioModalComponent } from './pages/dashboard/calendario/calendario-modal/calendario-modal.component';
@@ -53,7 +52,6 @@ import { NavBuscaComponent } from './components/navbar/nav-busca/nav-busca.compo
     FeedItemComponent,
     PlayerComponent,
     NavNotificacoesComponent,
-    FeedModalComponent,
     FollowModalComponent,
     CalendarioVideosComponent,
     CalendarioModalComponent,
@@ -68,6 +66,7 @@ import { NavBuscaComponent } from './components/navbar/nav-busca/nav-busca.compo
     NgbModule.forRoot()
   ],
   entryComponents: [
+    FeedItemComponent,
     FollowModalComponent,
     CalendarioModalComponent,
     AceitarSeguidoresModalComponent

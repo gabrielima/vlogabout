@@ -3,11 +3,9 @@
 
   <div class="content">
     <div class="container">
-      <app-feed-item></app-feed-item>
-      <app-feed-item></app-feed-item>
-      <app-feed-item></app-feed-item>
-      <app-feed-item></app-feed-item>
-      <app-feed-item></app-feed-item>
+      <div *ngFor="let i of [1,2,3,4,5]" (click)="openModal()">
+        <app-feed-item></app-feed-item>
+      </div>
     </div>
   </div>
 </div>

@@ -2,9 +2,8 @@
 
 .item {
   position: relative;
-  margin: 17px 0;
-  border-top: 1px solid #222;
-  padding: 17px 0;
+  border-bottom: 1px solid #222;
+  padding: 40px 0;
 }
 
 .item-date {
@@ -34,9 +33,9 @@
 }
 
 .item-share {
-  padding: 20px 0;
-  border-top: 1px solid rgba(#222, 0.6);
-  border-bottom: 1px solid rgba(#222, 0.6);
+  padding: 10px 0;
+  border-top: 1px solid rgba(#222, 0.3);
+  border-bottom: 1px solid rgba(#222, 0.3);
 
   button {
     background-color: transparent;
@@ -53,8 +52,9 @@
 
 .item-comments {
   position: relative;
-  padding: 15px 0;
+  padding: 15px 20px;
   min-height: 200px;
+  overflow: hidden;
 
   .comments {
     position: absolute;
@@ -63,7 +63,8 @@
     bottom: 20px;
     left: 0;
     right: 0;
-    padding: 20px 0;
+    padding: 20px 20px;
+    margin: 0 -20px;
   }
 }
 
@@ -72,5 +73,33 @@
 
   input {
     border: 0;
+  }
+}
+
+.isModal {
+  background-color: #fff;
+  padding: 0;
+
+  .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+  }
+
+  .item {
+  }
+
+  .item-video {
+    padding: 0;
+  }
+
+  .item-comments {
+    min-height: 100px;
+  }
+
+  .item-info {
+    padding: 20px 30px 5px;
   }
 }

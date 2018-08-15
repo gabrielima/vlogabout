@@ -1,9 +1,13 @@
-<div class="row item">
-  <div class="col-md-6 col-lg-8 item-video">
+<div class="row item" [class.isModal]="isModal">
+  <button class="close-modal" (click)="modal.close()" *ngIf="isModal">
+    <img src="assets/imgs/follow-modal/X.png" alt="">
+  </button>
+
+  <div class="col-md-7 col-lg-8 item-video">
     <app-player class="lg"></app-player>
   </div>
 
-  <div class="col-md-6 col-lg-4 d-flex flex-column item-info mt-3 mt-md-0">
+  <div class="col-md-5 col-lg-4 d-flex flex-column item-info mt-3 mt-md-0">
     <div class="d-flex flex-md-column">
       <img [src]="profile.picture" class="profile-img rounded" alt="">
 
@@ -12,7 +16,7 @@
         <p class="mb-0 instagram">@{{ profile.instagram }}</p>
       </div>
 
-      <div class="item-date text-sm">12.03.18</div>
+      <div class="item-date text-sm" *ngIf="!isModal">12.03.18</div>
     </div>
 
     <div class="item-comments flex-grow-1">
