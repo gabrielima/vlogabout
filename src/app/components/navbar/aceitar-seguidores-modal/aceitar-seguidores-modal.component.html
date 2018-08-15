@@ -1,0 +1,32 @@
+<div class="aceitar-seguidores">
+  <div class="aceitar-seguidores__header d-flex bg-primary">
+    <button class="close-modal">
+      <img src="assets/imgs/header/aceitar-seguidores/x.png" alt="">
+    </button>
+
+    <div class="flex-grow-1 align-items-center justify-content-center">
+      <img src="assets/imgs/header/aceitar-seguidores/x.png" alt="">
+      <p class="mb-0">Notifications</p>
+    </div>
+  </div>
+
+  <p class="text-primary mb-0 py-4">REQUEST TO FOLLOW</p>
+
+  <div class="solicitacoes">
+    <div class="solicitacao d-flex" *ngFor="let solicitacao of solicitacoes">
+      <div>
+        <img [src]="'assets/imgs/header/aceitar-seguidores/Foto' + solicitacao.img + '.png'" alt="">
+      </div>
+
+      <div class="flex-grow-1">
+        <p class="mb-0 text-primary">@{{ solicitacao.instagram }}</p>
+        <p class="mb-0 text-primary">{{ solicitacao.name }}</p>
+      </div>
+
+      <div class="align-items-center">
+        <button class="btn btn-sm btn-primary">Accept</button>
+        <button class="btn btn-sm btn-outline-primary">Exclude</button>
+      </div>
+    </div>
+  </div>
+</div>

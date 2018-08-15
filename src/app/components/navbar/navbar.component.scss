@@ -1,7 +1,21 @@
+@import './../../../assets/scss/variables';
+
+.popover-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#000, 0.75);
+
+  z-index: $zIndex-popover - 1;
+}
+
 .navbar {
   margin-top: 30px;
   background-color: #111;
   padding: 15px 0;
+  font-size: 0.9rem;
 }
 
 .navbar-brand {
@@ -15,10 +29,12 @@
 }
 
 .nav-item {
+  position: relative;
   margin-right: 15px;
 }
 
 .nav-link {
+  position: relative;
   .nav-link-img-active { display: none; }
 
   &.active {
@@ -27,6 +43,14 @@
   }
 }
 
-.notificacoes {
-  position: relative;
+.showPopover {
+  z-index: $zIndex-popover;
+}
+
+.popover {
+  position: absolute;
+  top: calc(100% + 23px);
+  right: 100px;
+  left: auto;
+  z-index: $zIndex-popover;
 }

@@ -1,65 +1,95 @@
 <!-- <div class="notificacoes-background"></div> -->
 
-<div class="notificacoes-wrapper">
+<div class="nav-notificacoes">
   <div class="pedido-seguir">
-    <div class="pedido d-flex">
-      <img src="assets/imgs/header/notificacoes/mulher-2.png" alt="">
-
-      <div class="flex-grow-1">
-        <h5 class="text-primary">REQUEST TO FOLLOW</h5>
-        <p>Aprove or ignore as solicitações.</p>
+    <div class="pedido d-flex align-items-center p-4">
+      <div>
+        <img src="assets/imgs/header/notificacoes/mulher-2.png" alt="">
       </div>
 
-      <button class="btn btn-primary btn-xs">Visualizar</button>
+      <div class="flex-grow-1 d-flex flex-column justify-content-center p-3">
+        <p class="font-weight-bold text-primary mb-0">REQUEST TO FOLLOW</p>
+        <p class="font-weight-bold mb-0">Aprove or ignore as solicitações.</p>
+      </div>
+
+      <div>
+        <button class="btn btn-primary btn-sm" (click)="openModalSolicitacoes()">Visualizar</button>
+      </div>
     </div>
   </div>
 
-  <div class="notificacoes">
-    <div class="notificacoes-dia">
-      <h5 class="text-primary">TODAY</h5>
+  <div class="notificacoes-wrapper">
+    <div class="notificacoes px-3">
+      <div class="notificacoes-dia">
+        <p class="text-primary font-weight-bold mb-0 py-3 text-center">TODAY</p>
 
-      <div class="notificacao d-flex">
-        <img src="assets/imgs/header/notificacoes/mulher-2.png" alt="">
+        <div class="notificacao d-flex">
+          <div>
+            <img src="assets/imgs/header/notificacoes/mulher-2.png" alt="">
+          </div>
 
-        <p class="flex-grow-1">
-          <a href="">@BrunoRodriguez</a>,
-          <a href="">@CarolRennier</a> e
-          <a href="">outras 24 pessoas</a> liked your video.
-        </p>
+          <div class="flex-grow-1 align-items-center p-3">
+            <p class="mb-0">
+              <a href="">@BrunoRodriguez</a>,
+              <a href="">@CarolRennier</a> e
+              <a href="">outras 24 pessoas</a> liked your video.
+            </p>
+          </div>
+        </div>
+
+        <div class="notificacao d-flex">
+          <div>
+            <img src="assets/imgs/header/notificacoes/homem-3.png" alt="">
+          </div>
+
+          <div class="flex-grow-1 align-items-center p-3">
+            <p class="mb-0">
+              <a href="">@CarlosPereira</a> commented your video.
+            </p>
+          </div>
+        </div>
+
+        <div class="notificacao d-flex">
+          <div>
+            <img src="assets/imgs/header/notificacoes/mulher-2.png" alt="">
+          </div>
+
+          <div class="flex-grow-1 align-items-center p-3">
+            <p class="mb-0">
+              <a href="">@CarolReinner</a> commented your video.
+            </p>
+          </div>
+        </div>
+
+        <div class="notificacao d-flex">
+          <div>
+            <img src="assets/imgs/header/notificacoes/homem-2.png" alt="">
+          </div>
+
+          <div class="flex-grow-1 align-items-center p-3">
+            <p class="mb-0">
+              <a href="">@DanielFontana</a> commented your video.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div class="notificacao d-flex">
-        <img src="assets/imgs/header/notificacoes/homem-3.png" alt="">
-
-        <p class="flex-grow-1">
-          <a href="">@CarlosPereira</a> commented your video.
+      <div class="notificacoes-dia">
+        <p class="text-primary font-weight-bold mb-0 py-3 text-center">
+          MARCH 28, 2018
         </p>
-      </div>
 
-      <div class="notificacao d-flex">
-        <img src="assets/imgs/header/notificacoes/mulher-2.png" alt="">
+        <div class="notificacao d-flex">
+          <div>
+            <img src="assets/imgs/header/notificacoes/mulher-2.png" alt="">
+          </div>
 
-        <p class="flex-grow-1">
-          <a href="">@CarolReinner</a> commented your video.
-        </p>
-      </div>
-
-      <div class="notificacao d-flex">
-        <img src="assets/imgs/header/notificacoes/homem-2.png" alt="">
-
-        <p class="flex-grow-1">
-          <a href="">@DanielFontana</a> commented your video.
-        </p>
-      </div>
-
-      <h5 class="text-primary">MARCH 28, 2018</h5>
-
-      <div class="notificacao d-flex">
-        <img src="assets/imgs/header/notificacoes/mulher-2.png" alt="">
-
-        <p class="flex-grow-1">
-          <a href="">@DanielSilva</a> commented your video.
-        </p>
+          <div class="flex-grow-1 align-items-center p-3">
+            <p class="mb-0">
+              <a href="">@DanielSilva</a> commented your video.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

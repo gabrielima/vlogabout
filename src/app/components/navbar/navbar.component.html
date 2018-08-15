@@ -1,3 +1,5 @@
+<div class="popover-backdrop" *ngIf="showBackdrop" (click)="closePopover()"></div>
+
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
     <a class="navbar-brand" [routerLink]="'/dashboard'">
@@ -17,11 +19,14 @@
             <img src="assets/imgs/header/home-active.png" class="nav-link-img-active" alt="">
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="'busca'" [routerLinkActive]="'active'">
+        <li class="nav-item" [class.showPopover]="showBusca">
+          <a class="nav-link" [routerLinkActive]="'active'" (click)="openPopover('Busca')">
             <img src="assets/imgs/header/buscar.png" class="nav-link-img" alt="">
             <img src="assets/imgs/header/buscar-active.png" class="nav-link-img-active" alt="">
           </a>
+          <div class="popover" *ngIf="showBusca" (click)="$event.stopPropagation()">
+            <!-- <app-nav-busca></app-nav-busca> -->
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="'calendario'" [routerLinkActive]="'active'">
@@ -29,12 +34,14 @@
             <img src="assets/imgs/header/calendario-active.png" class="nav-link-img-active" alt="">
           </a>
         </li>
-        <li class="nav-item notificacoes">
-          <a class="nav-link">
+        <li class="nav-item" [class.showPopover]="showNotificacoes">
+          <a class="nav-link" (click)="openPopover('Notificacoes')">
             <img src="assets/imgs/header/notificacao.png" class="nav-link-img" alt="">
             <img src="assets/imgs/header/notificacao-active.png" class="nav-link-img-active" alt="">
-            <!-- <app-nav-notificacoes></app-nav-notificacoes> -->
           </a>
+          <div class="popover" *ngIf="showNotificacoes" (click)="$event.stopPropagation()">
+            <app-nav-notificacoes></app-nav-notificacoes>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="'configuracoes'" [routerLinkActive]="'active'">

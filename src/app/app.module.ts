@@ -29,6 +29,7 @@ import { FeedModalComponent } from './pages/dashboard/feed/feed-modal/feed-modal
 import { FollowModalComponent } from './components/perfil-header/follow-modal/follow-modal.component';
 import { CalendarioVideosComponent } from './pages/dashboard/calendario/calendario-videos/calendario-videos.component';
 import { CalendarioModalComponent } from './pages/dashboard/calendario/calendario-modal/calendario-modal.component';
+import { AceitarSeguidoresModalComponent } from './components/navbar/aceitar-seguidores-modal/aceitar-seguidores-modal.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { CalendarioModalComponent } from './pages/dashboard/calendario/calendari
     FeedModalComponent,
     FollowModalComponent,
     CalendarioVideosComponent,
-    CalendarioModalComponent
+    CalendarioModalComponent,
+    AceitarSeguidoresModalComponent
   ],
   imports: [
     AppRouting,
@@ -65,7 +67,8 @@ import { CalendarioModalComponent } from './pages/dashboard/calendario/calendari
   ],
   entryComponents: [
     FollowModalComponent,
-    CalendarioModalComponent
+    CalendarioModalComponent,
+    AceitarSeguidoresModalComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
