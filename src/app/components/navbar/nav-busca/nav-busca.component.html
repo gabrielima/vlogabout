@@ -1,9 +1,9 @@
-<div class="nav-busca">
+<div class="nav-busca" [class.isModal]="isModal">
   <input type="text" placeholder="SEARCH...">
 
   <div class="results-wrapper">
     <div class="results">
-      <div class="result d-flex" *ngFor="let result of results">
+      <div class="result d-flex" *ngFor="let result of results" [routerLink]="'/dashboard/busca'">
         <div >
           <img src="assets/imgs/header/busca/favorite-active.png" alt="" *ngIf="result.followingYou">
           <img src="assets/imgs/header/busca/favorite.png" alt="" *ngIf="!result.followingYou">

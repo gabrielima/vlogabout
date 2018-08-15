@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-nav-busca',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-busca.component.scss']
 })
 export class NavBuscaComponent {
+  @Input() isModal: boolean;
+
   results = [
     { instagram: 'CarlosOliver', img: '', followingYou: true },
     { instagram: 'CarlosOliver', img: '', followingYou: false },

@@ -18,6 +18,15 @@
     border-width: 0 15.5px 20px 15.5px;
     border-color: transparent transparent #fff transparent;
   }
+
+  &.isModal {
+    width: 90%;
+    max-width: 500px;
+
+    &:after {
+      border: none;
+    }
+  }
 }
 
 input {
@@ -55,6 +64,7 @@ input {
 }
 
 .result {
+  cursor: pointer;
   padding: 15px 0;
   border-bottom: 1px solid rgba($primary, 0.8);
 }

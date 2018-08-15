@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NgbModalBackdrop } from '@ng-bootstrap/ng-bootstrap/modal/modal-backdrop';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NavBuscaComponent } from './nav-busca/nav-busca.component';
+import { NavNotificacoesComponent } from './nav-notificacoes/nav-notificacoes.component';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +13,27 @@ export class NavbarComponent  {
   showBackdrop = false;
   showBusca = false;
   showNotificacoes = false;
+
+  constructor(private modalService: NgbModal) {
+
+  }
+
+  // se for mobile, abre como modal,
+  // se for desktop abre como popover
+  open(type) {
+    const size = window.innerWidth;
+
+    if (size < 768) {
+      const component = type === 'Busca' ? NavBuscaComponent : NavNotificacoesComponent;
+      const modalRef = this.modalService.open(component, {
+        centered: true
+      });
+
+      modalRef.componentInstance.isModal = true;
+    } else {
+      this.openPopover(type);
+    }
+  }
 
   openPopover(popover) {
     this['show' + popover] = true;

@@ -17,6 +17,15 @@
     border-width: 0 15.5px 20px 15.5px;
     border-color: transparent transparent #ccc transparent;
   }
+
+  &.isModal {
+    width: 90%;
+    max-width: 500px;
+
+    &:after {
+      border: none;
+    }
+  }
 }
 
 .pedido-seguir {

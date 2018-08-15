@@ -69,6 +69,8 @@ import { NavBuscaComponent } from './components/navbar/nav-busca/nav-busca.compo
     FeedItemComponent,
     FollowModalComponent,
     CalendarioModalComponent,
+    NavBuscaComponent,
+    NavNotificacoesComponent,
     AceitarSeguidoresModalComponent
   ],
   providers: [

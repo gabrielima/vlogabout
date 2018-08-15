@@ -43,6 +43,11 @@
   }
 }
 
+.notificacoes-qtd-wrapper {
+  position: relative;
+  display: block;
+}
+
 .notificacoes-qtd {
   width: 15px;
   height: 15px;
@@ -50,8 +55,8 @@
   background-color: $primary;
   border-radius: 50%;
   position: absolute;
-  top: 4px;
-  right: 7px;
+  top: -2px;
+  right: -1px;
   text-align: center;
   line-height: 16px;
 }

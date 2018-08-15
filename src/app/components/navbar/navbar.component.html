@@ -23,7 +23,7 @@
         </li>
 
         <li class="nav-item" [class.showPopover]="showBusca">
-          <a class="nav-link" [routerLinkActive]="'active'" (click)="openPopover('Busca')" [class.active]="showBusca">
+          <a class="nav-link" [routerLinkActive]="'active'" (click)="open('Busca')" [class.active]="showBusca">
             <img src="assets/imgs/header/buscar.png" class="nav-link-img" alt="">
             <img src="assets/imgs/header/buscar-active.png" class="nav-link-img-active" alt="">
           </a>
@@ -40,11 +40,12 @@
         </li>
 
         <li class="nav-item" [class.showPopover]="showNotificacoes">
-          <a class="nav-link" (click)="openPopover('Notificacoes')" [class.active]="showNotificacoes">
-            <img src="assets/imgs/header/notificacao.png" class="nav-link-img" alt="">
-            <img src="assets/imgs/header/notificacao-active.png" class="nav-link-img-active" alt="">
-
-            <div class="notificacoes-qtd">3</div>
+          <a class="nav-link" (click)="open('Notificacoes')" [class.active]="showNotificacoes">
+            <span class="notificacoes-qtd-wrapper">
+              <img src="assets/imgs/header/notificacao.png" class="nav-link-img" alt="">
+              <img src="assets/imgs/header/notificacao-active.png" class="nav-link-img-active" alt="">
+              <div class="notificacoes-qtd">3</div>
+            </span>
           </a>
           <div class="popover" *ngIf="showNotificacoes" (click)="$event.stopPropagation()">
             <app-nav-notificacoes></app-nav-notificacoes>
