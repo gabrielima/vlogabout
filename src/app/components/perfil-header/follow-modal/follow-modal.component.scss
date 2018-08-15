@@ -1,12 +1,14 @@
 @import './../../../../assets/scss/variables';
 
 :host {
-  padding: 25px 30px;
+  padding: 22px 27px;
 }
 
 button {
   background-color: transparent;
   border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .tabs {

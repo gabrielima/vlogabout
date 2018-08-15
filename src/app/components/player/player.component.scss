@@ -3,7 +3,7 @@
 
   img {
     width: 100%;
-    max-height: 210px;
+    height: auto;
     background-color: #ccc;
   }
 
@@ -21,10 +21,6 @@
 }
 
 :host.lg .video {
-  img {
-    max-height: 600px;
-  }
-
   &:after {
     background-image: url(/assets/imgs/busca/play_lg.png);
   }

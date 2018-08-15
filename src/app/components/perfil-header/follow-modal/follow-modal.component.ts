@@ -7,7 +7,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./follow-modal.component.scss']
 })
 export class FollowModalComponent {
-  @Input() tab: string;
+  @Input() tab = 'Followers';
   @Input() followers: any;
   @Input() following: any;
 

@@ -27,6 +27,8 @@ import { PlayerComponent } from './components/player/player.component';
 import { NavNotificacoesComponent } from './components/navbar/nav-notificacoes/nav-notificacoes.component';
 import { FeedModalComponent } from './pages/dashboard/feed/feed-modal/feed-modal.component';
 import { FollowModalComponent } from './components/perfil-header/follow-modal/follow-modal.component';
+import { CalendarioVideosComponent } from './pages/dashboard/calendario/calendario-videos/calendario-videos.component';
+import { CalendarioModalComponent } from './pages/dashboard/calendario/calendario-modal/calendario-modal.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { FollowModalComponent } from './components/perfil-header/follow-modal/fo
     PlayerComponent,
     NavNotificacoesComponent,
     FeedModalComponent,
-    FollowModalComponent
+    FollowModalComponent,
+    CalendarioVideosComponent,
+    CalendarioModalComponent
   ],
   imports: [
     AppRouting,
@@ -60,7 +64,8 @@ import { FollowModalComponent } from './components/perfil-header/follow-modal/fo
     NgbModule.forRoot()
   ],
   entryComponents: [
-    FollowModalComponent
+    FollowModalComponent,
+    CalendarioModalComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
