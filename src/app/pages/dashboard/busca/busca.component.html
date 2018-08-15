@@ -10,14 +10,15 @@
       <div class="results row">
         <div class="col-sm-4">
           <div class="result" *ngFor="let video of [1,2,3,4]">
-            <app-player></app-player>
+            <app-player [showControls]="false"></app-player>
           </div>
         </div>
 
         <div class="col-sm-8">
           <div class="result result-lg" *ngFor="let video of [1,2]">
-            <app-player class="lg"></app-player>
+            <app-player [showControls]="false" class="lg"></app-player>
         </div>
+
       </div>
     </div>
   </div>

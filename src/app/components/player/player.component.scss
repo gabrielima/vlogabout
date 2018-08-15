@@ -1,7 +1,7 @@
 :host .video {
   position: relative;
 
-  img {
+  > img {
     width: 100%;
     height: auto;
     background-color: #ccc;
@@ -23,5 +23,31 @@
 :host.lg .video {
   &:after {
     background-image: url(/assets/imgs/busca/play_lg.png);
+  }
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+  color: #fff;
+
+  > div {
+    padding: 0 10px;
+  }
+}
+
+.progresso {
+  position: relative;
+
+  img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  img:last-child {
+    width: 100%;
   }
 }
