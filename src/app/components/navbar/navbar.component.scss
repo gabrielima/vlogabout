@@ -4,6 +4,16 @@
   padding: 15px 0;
 }
 
+.navbar-brand {
+  img {
+    width: 180px;
+
+    @media screen and (min-width: 768px) {
+      width: 290px;
+    }
+  }
+}
+
 .nav-item {
   margin-right: 15px;
 }
@@ -15,4 +25,9 @@
     .nav-link-img { display: none; }
     .nav-link-img-active { display: inline-block; }
   }
+}
+
+
+.notificacoes {
+  position: relative;
 }

@@ -1,0 +1,29 @@
+@import './../../../../assets/scss/variables';
+
+.notificacoes-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zIndex-modal-popover-background;
+  background-color: rgba(#111, 0.8);
+}
+
+:host {
+  position: absolute;
+  top: 68px;
+  right: -120px;
+  z-index: $zIndex-popover;
+}
+
+.notificacoes-wrapper {
+  width: 350px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.pedido-seguir {
+  background-color: #ccc;
+
+}
