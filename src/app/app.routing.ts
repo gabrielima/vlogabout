@@ -31,7 +31,6 @@ export const AppRoutes: Routes = [
       {
         path: '',
         redirectTo: 'feed',
-        pathMatch: 'full'
       },
       {
         path: 'busca',
